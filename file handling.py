@@ -1,0 +1,21 @@
+#open function has 2 parameters-filename and mode means purposes(4 modes)
+#4 modes-x(create mode),w(write mode),a(append mode for updation means already having content in file),r(read mode)
+#a=open("add.txt","x")
+b=open("add.txt","w")
+b.write("anjali is a good girl\nshe is an engineer")
+b.close()
+b=open("add.txt","a")
+b.write("python\n")
+b.close()
+b=open("add.txt","r")
+print(b.read())
+b=open("add.txt","r")
+print(b.read(5))#needed length
+b=open("add.txt","r")
+print(b.readline())
+print(b.readline())
+#z=open("add1.txt","x")
+import os
+#os.remove("add1.txt")
+os.removedirs("file")
+
